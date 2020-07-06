@@ -1,4 +1,11 @@
 body {
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
+    background-color: #A46503;
+    background-image: url('./assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
