@@ -4,7 +4,8 @@ import './App.css'
 export class App extends Component {
     render() {
         return (
-            <>
+            <>  
+                <div className="gradient-layer"></div>
                 <div className="main-screen-top">
                     <div className="center-text">
                         <span class="title-text">anuraq</span>
