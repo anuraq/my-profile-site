@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
+import Contact from './components/Contact'
 import './App.css'
 
 export class App extends Component {
     render() {
         return (
             <>  
-                <div className="gradient-layer"></div>
                 <div className="main-screen-top">
                     <div className="center-text">
                         <span class="title-text">anuraq</span>
@@ -26,8 +26,7 @@ export class App extends Component {
                         <div className="info-text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum</div>
                     </div>
                     <div className="contact">
-                        <div className="contact-title">Contact</div>
-                        <div className="contact-form"></div>
+                        <Contact />
                     </div>
                     <div className="projects">
                         <div className="projects-title">Projects</div>

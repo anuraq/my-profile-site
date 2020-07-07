@@ -1,4 +1,47 @@
-.NavBar{
-    height: 100 vh;
-    background-color: aqua;
+.contact-form{
+    display: flex;
+    height: 85%;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+.input-box{
+    border: 1px solid black;
+    border-radius: 20px;
+    flex-grow: 1;
+    color: black;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    margin: 0px 30px;
+    margin-bottom: 25px;
+    background-color: rgba(127, 127, 127, 0.5);
+}
+.input-box:focus{
+    outline: none;
+}
+.input-box::placeholder{
+    color: black;
+}
+.message{
+    flex-grow: 5;
+    font-size: 1.9rem;
+}
+.Submit-btn{
+    flex-grow: 1;
+    background-color: midnightblue;
+    border-radius: 30px;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 2px;
+    height: 2.5rem;
+    font-size: 1.7rem;
+    color: oldlace;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s ease;
+}
+.Submit-btn:hover{
+    box-shadow: 5px 5px 8px black;
+    cursor: pointer;
 }
