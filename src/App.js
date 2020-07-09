@@ -21,15 +21,20 @@ export class App extends Component {
                     </div>
                 </div>
                 <div className="bottom-screen">
-                    <div className="info-me">
-                        <div className="info-title">Info // About Me</div>
-                        <div className="info-text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum</div>
+                    <div className="bottom-grid">
+                        <div className="info-me">
+                            <div className="info-title">Info // About Me</div>
+                            <div className="info-text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum</div>
+                        </div>
+                        <div className="contact">
+                            <Contact />
+                        </div>
+                        <div className="projects">
+                            <div className="projects-title">Projects</div>
+                        </div>
                     </div>
-                    <div className="contact">
-                        <Contact />
-                    </div>
-                    <div className="projects">
-                        <div className="projects-title">Projects</div>
+                    <div className="footer">
+                        <div className="footer-text">anuraq c is cool</div>
                     </div>
                 </div>
             </>
