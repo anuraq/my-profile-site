@@ -54,5 +54,23 @@
 .project-design{
     background-color: rgba(127, 127, 127, 0.8);
     border-radius: 30px;
+    display: flex;
+    flex-grow: 1;
+    padding: 10px;
+}
+.project-list{
+    width: 40%;
+    border-right: 1px solid black;
+}
+.project-name{
+    background-color: cadetblue;
+    height: 40px;
+    box-sizing: border-box;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 3px;
+}
+.project-info{
     flex-grow: 1;
 }
