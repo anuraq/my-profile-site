@@ -45,3 +45,14 @@
     box-shadow: 5px 5px 8px black;
     cursor: pointer;
 }
+.project-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.project-design{
+    background-color: rgba(127, 127, 127, 0.8);
+    border-radius: 30px;
+    flex-grow: 1;
+}

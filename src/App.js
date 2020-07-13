@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Contact from './components/Contact'
+import Project from './components/Project'
 import './App.css'
 
 export class App extends Component {
@@ -30,7 +31,7 @@ export class App extends Component {
                             <Contact />
                         </div>
                         <div className="projects">
-                            <div className="projects-title">Projects</div>
+                            <Project />
                         </div>
                     </div>
                     <div className="footer">
