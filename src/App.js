@@ -35,7 +35,7 @@ export class App extends Component {
                         </div>
                     </div>
                     <div className="footer">
-                        <div className="footer-text">anuraq c is cool</div>
+                        <div className="footer-text">anuraq &copy; , c is cool</div>
                     </div>
                 </div>
             </>
