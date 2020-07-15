@@ -4,17 +4,32 @@ import Project from './components/Project'
 import './App.css'
 
 export class App extends Component {
+    socialclick(i){
+        switch (i){
+            case 1: window.open("https://www.instagram.com/anu.r.a.g");
+            break;
+            case 2: window.open("https://www.github.com/anuraq");
+            break;
+            case 3: window.open("https://www.twitter.com/anuraqk");
+            break;
+            case 4: window.location.href = "mailto:yoyoanusingh27@gmail.com";
+            break; 
+            default:
+                console.log("no links found");
+        }
+    }
+
     render() {
         return (
             <>  
                 <div className="main-screen-top">
                     <div className="center-text">
-                        <span class="title-text">anuraq</span>
+                        <span className="title-text">anuraq</span>
                         <div className="info-buttons">
-                            <div id="insta" className="social-btn"><img src={require('./assets/insta.png')} alt="instagram"></img></div>
-                            <div id="github" className="social-btn"><img src={require('./assets/github.png')} alt="github"></img></div>
-                            <div id="twitter" className="social-btn"><img src={require('./assets/twitter.png')} alt="twitter"></img></div>
-                            <div id="mail" className="social-btn"><img src={require('./assets/mail.png')} alt="mail"></img></div>
+                            <div id="insta" className="social-btn" onClick={() => this.socialclick(1)}><img src={require('./assets/insta.png')} alt="instagram"></img></div>
+                            <div id="github" className="social-btn" onClick={() => this.socialclick(2)}><img src={require('./assets/github.png')} alt="github"></img></div>
+                            <div id="twitter" className="social-btn" onClick={() => this.socialclick(3)}><img src={require('./assets/twitter.png')} alt="twitter"></img></div>
+                            <div id="mail" className="social-btn" onClick={() => this.socialclick(4)}><img src={require('./assets/mail.png')} alt="mail"></img></div>
                         </div>
                     </div>
                     <div className="bottom-arrow">
