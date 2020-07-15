@@ -1,6 +1,5 @@
 {
   "name": "my-profile-site",
-  "homepage": "http://anuraq.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
