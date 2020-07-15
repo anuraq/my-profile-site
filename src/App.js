@@ -24,7 +24,7 @@ export class App extends Component {
                 <div className="bottom-screen">
                     <div className="bottom-grid">
                         <div className="info-me">
-                            <div className="info-title">Info // About Me</div>
+                            <div className="info-title">About Me</div>
                             <div className="info-text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum</div>
                         </div>
                         <div className="contact">

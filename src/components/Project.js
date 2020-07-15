@@ -4,9 +4,9 @@ import './style.css'
 export class Project extends Component {
     constructor(props) {
         super(props);
-        this.state = {key: 0, p_list: ["Calc", "Student_RDBMS" , "tetris-html", "Socket-Stream", "Shrink-Link_server", "CovidApp-rn" , "e-comm-site"]};
+        this.state = {key: 0, p_list: ["Calc", "Student-RDBMS" , "tetris-html", "Socket-Stream", "Shrink-Link-server", "CovidApp-rn" , "e-comm-site"]};
         this.p_info = [
-                    {'desc': 'A basic android Calcular app.'},
+                    {'desc': 'A basic android Calculator app.'},
                     {'desc': 'A java Application with MySQL using jdbc to store information about Students.'},
                     {'desc': 'tetris implementation using js and html.'},
                     {'desc': 'Using Sockets to send files data through same network.'},
