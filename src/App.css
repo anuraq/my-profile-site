@@ -6,6 +6,14 @@
     font-family: "Dosis";
     src: url('./assets/Dosis-VariableFont_wght.ttf') format("truetype");
 }
+@font-face{
+    font-family: "dwd";
+    src: url("./assets/TradeWinds-Regular.ttf") format("truetype");
+  }
+  @font-face{
+    font-family: "robo";
+    src: url("./assets/Roboto-Black.ttf") format("truetype");
+  }
 .center-text{
     position: absolute;
     top: 50vh;
@@ -15,8 +23,15 @@
 .title-text{
     font-size: 11rem;
     color: aliceblue;
-    font-family: 'Dosis';
+    font-family: 'robo';
     font-weight: 800;
+    background-image: url("./assets/source.gif");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-position: center;
+
 }
 .info-buttons{
     display: flex;
