@@ -14,11 +14,17 @@
     font-family: "robo";
     src: url("./assets/Roboto-Black.ttf") format("truetype");
   }
+#top-logo {
+    position: relative;
+    top: 20px;
+    height: 90px;
+}
+
 .center-text{
-    position: absolute;
+    /* position: absolute;
     top: 50vh;
     left: 50vw;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 .title-text{
     font-size: 11rem;
@@ -34,20 +40,23 @@
 
 }
 .info-buttons{
+    justify-self: flex-end;
     display: flex;
     flex-direction: row;
-    max-width: 500px;
+    width: 450px;
     flex-wrap: wrap;
     margin: -10px 0 0 0;
     justify-content: space-around;
+    position: relative;
+    bottom: 20px;;
 }
 .social-btn{
     /**background-color: rgba(127, 127, 127, 0.4); **/
-    border: 1px solid aliceblue;
+    border: 1px solid rgb(0, 0, 0);
     color: aliceblue;
     font-size: 5rem;
-    width: 100px;
-    height: 100px;
+    width: 86px;
+    height: 86px;
     margin-top: 10px;
     box-sizing: border-box;
     border-radius: 50%;
@@ -57,8 +66,8 @@
 .social-btn img{
     display: block;
     margin: auto;
-    height: 64px;
-    width: 64px;
+    height: 50px;
+    width: 50px;
     cursor: pointer;
 }
 #insta:hover ,#github:hover ,#twitter:hover ,#mail:hover{
@@ -66,6 +75,10 @@
     background-position: center bottom;
 }
 .main-screen-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
     height: 100vh;
     width: 100vw;
 }
@@ -95,7 +108,8 @@
     height: 100vh;
     width: 100vw;
     border-radius: 10% 10% 0px 0px;
-    background-color: #020C13;
+    background-color: rgba(94, 90, 90, 0.81);
+    backdrop-filter: blur(20px);
 }
 .bottom-grid{
     display: grid;
@@ -110,11 +124,11 @@
     grid-area: info;
     padding: 10px;
     padding-top: 20px;
-    background-color: burlywood;
+    background-color: #B6B4A4;
     border-radius: 20px;
     box-sizing: border-box;
-    border: 10px solid cornflowerblue;
     transition: transform 0.2s ease;
+    box-shadow: 10px 9px 2px 5px rgba(0, 0, 0, 0.25);
 }
 .info-title{
     font-size: 3rem;
@@ -130,20 +144,19 @@
     grid-area: contact;
     padding: 10px;
     padding-top: 13px;
-    background-color: cornflowerblue;
+    background-color: #97A3A4;
     border-radius: 20px;
     box-sizing: border-box;
-    border: 10px solid darkcyan;
 }
 .projects{
     grid-area: projects;
     padding: 10px;
     padding-top: 13px;
-    background-color: darkcyan;
+    background-color: #A8AFA8;
     border-radius: 20px;
     box-sizing: border-box;
-    border: 10px solid burlywood;
     transition: transform 0.2s ease;
+    box-shadow: 10px 9px 5px 1px rgba(0, 0, 0, 0.25);
 }
 .contact-title{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

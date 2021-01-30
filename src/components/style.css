@@ -51,7 +51,6 @@
     width: 100%;
 }
 .project-design{
-    background-color: rgba(127, 127, 127, 0.8);
     border-radius: 30px;
     box-sizing: border-box;
     display: flex;
@@ -79,7 +78,7 @@
   background: transparent;
 }
 .project-name{
-    background-color: rgb(95, 158, 160);
+    background-color: #C4C4C4;
     height: fit-content;
     box-sizing: border-box;
     padding: 10px;
@@ -89,7 +88,7 @@
 }
 .project-name:hover{
     cursor: pointer;
-    background-color: rgb(73, 121, 122);
+    background-color: rgb(107, 140, 141);
 }
 .project-name-title{
     font-size: 2.5rem;
