@@ -52,7 +52,7 @@
 }
 .social-btn{
     /**background-color: rgba(127, 127, 127, 0.4); **/
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(51, 51, 51);
     color: aliceblue;
     font-size: 5rem;
     width: 86px;
@@ -61,7 +61,11 @@
     box-sizing: border-box;
     border-radius: 50%;
     display: flex;
-    transition: transform 0.2s ease-in, background-position 0.4s ease-in;
+    transition: transform 0.2s ease-in, background-position 0.4s ease-in, border 0.4s ease-in;
+}
+.social-btn:hover {
+    border-width: 3px;
+    border-color: #f5f5f5;
 }
 .social-btn img{
     display: block;
@@ -69,10 +73,50 @@
     height: 50px;
     width: 50px;
     cursor: pointer;
+    filter: invert(0.2);
+    transition: filter 0s ease-in;
+}
+.social-btn:hover >  img {
+    filter: invert(0.9);
 }
 #insta:hover ,#github:hover ,#twitter:hover ,#mail:hover{
     transform: scale(1.3) translateY(-10px);
     background-position: center bottom;
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fly-in {
+    0% {
+        opacity: 0;
+        transform: scale(3) translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+@keyframes from-left {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+} 
+@keyframes from-right {
+    0% {
+        transform: translateX(+100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .main-screen-top{
     display: flex;
@@ -81,6 +125,7 @@
     flex-direction: column;
     height: 100vh;
     width: 100vw;
+    animation: fade-in ease 1.3s;
 }
 #insta{
     background: linear-gradient(to bottom,rgba(160, 154, 154, 0) 50%, #CF2872 50%);
@@ -110,6 +155,7 @@
     border-radius: 10% 10% 0px 0px;
     background-color: rgba(94, 90, 90, 0.81);
     backdrop-filter: blur(20px);
+    animation: fly-in ease 1s;
 }
 .bottom-grid{
     display: grid;
@@ -129,6 +175,8 @@
     box-sizing: border-box;
     transition: transform 0.2s ease;
     box-shadow: 10px 9px 2px 5px rgba(0, 0, 0, 0.25);
+    animation: fly-in ease 1s, from-left ease 1s;
+    animation-delay: 0.1;
 }
 .info-title{
     font-size: 3rem;
@@ -147,6 +195,8 @@
     background-color: #97A3A4;
     border-radius: 20px;
     box-sizing: border-box;
+    animation: fly-in ease 1s, from-left ease 1s;
+    animation-delay: 0.2;
 }
 .projects{
     grid-area: projects;
@@ -157,6 +207,8 @@
     box-sizing: border-box;
     transition: transform 0.2s ease;
     box-shadow: 10px 9px 5px 1px rgba(0, 0, 0, 0.25);
+    animation: fly-in ease 1s, from-right ease 1s;
+    animation-delay: 0.3;
 }
 .contact-title{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
