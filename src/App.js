@@ -30,9 +30,6 @@ export class App extends Component {
         if(window.scrollY > 40) {
             this.setState({showHidden:true});
         }
-        else {
-            this.setState({showHidden:false});
-        }
     }
 
     render() {

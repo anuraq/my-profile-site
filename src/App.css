@@ -27,7 +27,7 @@
     transform: translate(-50%, -50%); */
 }
 .title-text{
-    font-size: 11rem;
+    font-size: clamp(5rem, 40vw, 11rem);
     color: aliceblue;
     font-family: 'robo';
     font-weight: 800;
@@ -37,13 +37,12 @@
     -webkit-background-clip: text;
     color: transparent;
     background-position: center;
-
 }
 .info-buttons{
     justify-self: flex-end;
     display: flex;
     flex-direction: row;
-    width: 450px;
+    max-width: 450px;
     flex-wrap: wrap;
     margin: -10px 0 0 0;
     justify-content: space-around;
@@ -57,7 +56,7 @@
     font-size: 5rem;
     width: 86px;
     height: 86px;
-    margin-top: 10px;
+    margin: 10px 10px 0 10px;
     box-sizing: border-box;
     border-radius: 50%;
     display: flex;
@@ -74,7 +73,7 @@
     width: 50px;
     cursor: pointer;
     filter: invert(0.2);
-    transition: filter 0s ease-in;
+    transition: filter 0.4s ease-in;
 }
 .social-btn:hover >  img {
     filter: invert(0.9);
@@ -155,7 +154,7 @@
     border-radius: 10% 10% 0px 0px;
     background-color: rgba(94, 90, 90, 0.81);
     backdrop-filter: blur(20px);
-    animation: fly-in ease 1s;
+    animation: fade-in ease 1s;
 }
 .bottom-grid{
     display: grid;
@@ -175,8 +174,6 @@
     box-sizing: border-box;
     transition: transform 0.2s ease;
     box-shadow: 10px 9px 2px 5px rgba(0, 0, 0, 0.25);
-    animation: fly-in ease 1s, from-left ease 1s;
-    animation-delay: 0.1;
 }
 .info-title{
     font-size: 3rem;
@@ -195,8 +192,6 @@
     background-color: #97A3A4;
     border-radius: 20px;
     box-sizing: border-box;
-    animation: fly-in ease 1s, from-left ease 1s;
-    animation-delay: 0.2;
 }
 .projects{
     grid-area: projects;
@@ -207,8 +202,6 @@
     box-sizing: border-box;
     transition: transform 0.2s ease;
     box-shadow: 10px 9px 5px 1px rgba(0, 0, 0, 0.25);
-    animation: fly-in ease 1s, from-right ease 1s;
-    animation-delay: 0.3;
 }
 .contact-title{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -233,6 +226,27 @@
     font-size: 1.2rem;
     margin: 0 auto;
 }
+@media screen and (min-width: 1000px) {
+    .main-screen-top{
+        animation: fade-in ease 1.3s;
+    }
+    .bottom-screen{
+        animation: fly-in ease 1s;
+    }
+    .info-me{
+        animation: fly-in ease 1s, from-left ease 1s;
+        animation-delay: 0.1;
+    }
+    .contact{
+        animation: fly-in ease 1s, from-left ease 1s;
+        animation-delay: 0.2;
+    }
+    .projects{
+        animation: fly-in ease 1s, from-right ease 1s;
+        animation-delay: 0.3;
+    }
+
+}
 @media screen and (max-width: 1155px) {
     .bottom-grid{
         display: grid;
@@ -248,10 +262,13 @@
         padding: 8px;
         width: 40%;
     }
+    .social-btn {
+        margin: 10px 5px 5px 0;
+    }
 }
 @media screen and (max-width: 450px) {
     .title-text {
-      font-size: 8rem;
+      font-size: 7rem;
     }
     .center-text{
         top: 40vh;
@@ -278,6 +295,10 @@
     .project-info::-webkit-scrollbar{
         height: 0px;
         width: 0px;
+    }
+    .Submit-btn {
+        font-size: 1rem;
+        margin-bottom: 10px;
     }
   }
 @media screen and (max-width: 360px) {
